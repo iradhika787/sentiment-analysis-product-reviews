@@ -1,0 +1,92 @@
+body {
+    background: #eef3fb;
+}
+
+section.main {
+    padding-top: 1.2rem;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #4f46e5, #0ea5e9);
+    border-radius: 24px;
+    padding: 2rem;
+    color: white;
+    box-shadow: 0 24px 80px rgba(15, 23, 42, 0.12);
+    margin-bottom: 1.5rem;
+}
+
+.hero h1 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2.8rem;
+    line-height: 1.05;
+}
+
+.hero p {
+    opacity: 0.95;
+    font-size: 1.05rem;
+    max-width: 520px;
+}
+
+.hero-badge {
+    background: rgba(255, 255, 255, 0.18);
+    padding: 0.85rem 1.2rem;
+    border-radius: 999px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.result-card {
+    background: white;
+    border-radius: 24px;
+    padding: 1.6rem;
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+    margin-top: 1rem;
+}
+
+.result-card h2 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+.result-status {
+    font-size: 1.25rem;
+    margin-bottom: 0.8rem;
+}
+
+.stTextArea>div>label,
+.stTextInput>div>label {
+    color: #111827;
+    font-weight: 700;
+}
+
+.stTextArea>div>div>textarea {
+    border-radius: 18px;
+}
+
+.stButton>button {
+    background-color: #0ea5e9;
+    color: white;
+    border-radius: 14px;
+    padding: 0.85rem 1.4rem;
+    font-weight: 700;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 12px 24px rgba(14, 165, 233, 0.22);
+}
+
+.stButton>button:hover {
+    background-color: #0284c7;
+}
+
+.stImage>div>img {
+    border-radius: 20px;
+}
+
+.stSidebar .css-1d391kg {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 1rem 1rem 1.5rem 1rem;
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.06);
+}
