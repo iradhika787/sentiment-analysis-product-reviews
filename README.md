@@ -39,6 +39,7 @@ This project automates sentiment classification to help businesses understand cu
 
 ---
 
+
 ## 📁 Project Structure
 Sentiment Analysis of Product Reviews
 |__app/
@@ -55,3 +56,37 @@ Sentiment Analysis of Product Reviews
 |   ├── 05_evaluation.ipynb
 |___README.md
 |___.gitignore
+
+
+
+---
+
+
+## 🚀 How to Run Locally
+
+1. Clone the repository:
+git clone https://github.com/iradhika787/sentiment-analysis-product-reviews.git
+
+2. Navigate to the project directory:
+cd sentiment-analysis-product-reviews
+
+
+3. Create and activate a virtual environment:
+python -m venv venv
+venv\Scripts\activate
+
+4. Install required dependencies:
+pip install -r requirements.txt
+
+5. Run the Streamlit application:
+streamlit run app/app.py
+
+---
+
+## 🖼️ Demo Screenshots
+
+![Sentiment Explorer UI](app/screenshots/result1.png)
+*Sentiment Explorer homepage with the review input and sidebar.*
+
+![Prediction Results](app/screenshots/result2.png)
+*Prediction result showing sentiment label, confidence score, and chart.*
