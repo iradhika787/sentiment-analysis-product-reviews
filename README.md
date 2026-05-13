@@ -85,8 +85,8 @@ streamlit run app/app.py
 
 ## 🖼️ Demo Screenshots
 
-![Sentiment Explorer UI](app/screenshots/result1.png)
+![Sentiment Explorer UI](app/results/result1.png)
 *Sentiment Explorer homepage with the review input and sidebar.*
 
-![Prediction Results](app/screenshots/result2.png)
+![Prediction Results](app/results/result2.png)
 *Prediction result showing sentiment label, confidence score, and chart.*
