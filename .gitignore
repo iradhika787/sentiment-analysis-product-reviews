@@ -1,0 +1,25 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+.env/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Large datasets
+data/raw/
+data/processed/*.csv
+
+# Trained models
+# Keep the small production artifacts available to Streamlit Community Cloud.
+# Do not commit experimental checkpoints or large binary exports here.
+models/*.pkl
+!models/logreg_sentiment_model_full.pkl
+!models/tfidf_vectorizer_full.pkl
+
+# OS files
+.DS_Store
+Thumbs.db

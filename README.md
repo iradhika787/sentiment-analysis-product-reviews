@@ -39,7 +39,6 @@ This project automates sentiment classification to help businesses understand cu
 
 ---
 
-
 ## 📁 Project Structure
 Sentiment Analysis of Product Reviews
 |__app/
@@ -57,30 +56,6 @@ Sentiment Analysis of Product Reviews
 |___README.md
 |___.gitignore
 
-
-
----
-
-
-## 🚀 How to Run Locally
-
-1. Clone the repository:
-git clone https://github.com/iradhika787/sentiment-analysis-product-reviews.git
-
-2. Navigate to the project directory:
-cd sentiment-analysis-product-reviews
-
-
-3. Create and activate a virtual environment:
-python -m venv venv
-venv\Scripts\activate
-
-4. Install required dependencies:
-pip install -r requirements.txt
-
-5. Run the Streamlit application:
-streamlit run app/app.py
-
 ---
 
 ## 🖼️ Demo Screenshots
@@ -90,3 +65,50 @@ streamlit run app/app.py
 
 ![Prediction Results](app/results/result2.png)
 *Prediction result showing sentiment label, confidence score, and chart.*
+
+---
+
+## 🚀 How to Run Locally
+
+1. Clone the repository:
+```bash
+git clone https://github.com/iradhika787/sentiment-analysis-product-reviews.git
+```
+
+2. Navigate to the project directory:
+```bash
+cd sentiment-analysis-product-reviews
+```
+
+3. Create and activate a virtual environment:
+```bash
+python -m venv venv
+venv\\Scripts\\activate
+```
+
+4. Install required dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+5. Run the Streamlit application:
+```bash
+streamlit run app/app.py
+```
+
+---
+
+## ☁️ Deploy on Streamlit Community Cloud
+
+The production model and vectorizer are intentionally allow-listed in `.gitignore` because the app needs them at runtime. Before deploying, verify these files appear in GitHub:
+
+- `models/logreg_sentiment_model_full.pkl`
+- `models/tfidf_vectorizer_full.pkl`
+
+Create a Streamlit app from the repository with the main file set to `app/app.py`. If the files are missing from GitHub, run:
+
+```bash
+git add models/logreg_sentiment_model_full.pkl models/tfidf_vectorizer_full.pkl
+git commit -m "Add production model artifacts"
+git push
+```
